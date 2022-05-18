@@ -33,16 +33,23 @@ private:
     }
 
 public:
-    // Constructor to create a hash table with 'n' indices:
-    HashTable(int n) {
-        total_elements = n;
-        table = new list<int>[total_elements];
-    }
+ 
+   int colisoes;  //contador de colisões
 
-    // Insert data in the hash table:
-    void insertElement(int key) {
-        table[getHash(key)].push_back(key); //Add element at the end
-    }
+  // Constructor to create a hash table with 'n' indices:
+  HashTable(int n){
+    total_elements = n;
+    table = new list<int>[total_elements];
+  }
+
+  // Insert data in the hash table:
+  void insertElement(int key){
+    if(table[getHash(key)].size()>=1){
+      colisoes+=1;
+    }  //verifica se a posição já está ocupada. Se estiver, ocorreu uma colisão e somamos 1 às colisões
+    
+    table[getHash(key)].push_back(key); //Add element at the end
+  }
 
     // Remove data from the hash table:
     void removeElement(int key) {
@@ -86,6 +93,8 @@ int main() {
 
     cout << "\n..:: Hash Table ::.." << endl;
     ht.printAll();
+    
+    cout << "\nNúmero total de colisões: " << ht.colisoes << endl;
 
     ht.removeElement(1);
     cout << endl << "..:: After deleting element 1 ::.." << endl;
