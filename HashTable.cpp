@@ -17,11 +17,6 @@
  TIA: 31943187
 ****************************************************************** */
 
-
-
-//https://www.cplusplus.com/reference/list/list/
-//list documentation
-
 #include <iostream>
 #include <list>
 
