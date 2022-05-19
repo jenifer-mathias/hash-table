@@ -93,12 +93,12 @@ int main() {
 
     cout << "\n..:: Hash Table ::.." << endl;
     ht.printAll();
-    
-    cout << "\nNúmero total de colisões: " << ht.colisoes << endl;
 
     ht.removeElement(1);
     cout << endl << "..:: After deleting element 1 ::.." << endl;
     ht.printAll();
+
+  cout << "\nTotal de colisões: " << ht.colisoes << endl;
 
     return 0;
 }
