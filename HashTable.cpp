@@ -82,6 +82,18 @@ public:
     }
 };
 
+float mediaLista(int array[]) { 
+  
+    float soma;
+    int count;
+    count = 0;
+
+    for (int i=1 ; i < sizeof array/sizeof array[0]; i++)
+      count = count + 1;
+      soma = soma + sizeof array/sizeof array[0];
+    return soma/count; 
+}
+
 int main() {
     /** Create a hash table with x indices: */
     HashTable hashTable(9);
@@ -102,6 +114,8 @@ int main() {
 
     cout << "\n.........:: Collisions ::............" << endl;
     cout << "\nTotal collisions: " << hashTable.collisionCount << endl;
+ 
+    cout << "Tamanho médio das listas: " << mediaLista(array) << endl;
 
     return 0;
 }
