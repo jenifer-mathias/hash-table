@@ -82,16 +82,14 @@ public:
     }
 };
 
-float mediaLista(int array[]) { 
-  
-    float soma;
-    int count;
-    count = 0;
+float getAverageLengthOfLists(int array[]) {
+    float sum;
+    int count = 0;
 
-    for (int i=1 ; i < sizeof array/sizeof array[0]; i++)
-      count = count + 1;
-      soma = soma + sizeof array/sizeof array[0];
-    return soma/count; 
+    for (int i = 1; i < sizeof array / sizeof array[0]; i++)
+        count = count + 1;
+    sum = sum + sizeof array / sizeof array[0];
+    return sum / count;
 }
 
 int main() {
@@ -114,8 +112,9 @@ int main() {
 
     cout << "\n.........:: Collisions ::............" << endl;
     cout << "\nTotal collisions: " << hashTable.collisionCount << endl;
- 
-    cout << "Tamanho médio das listas: " << mediaLista(array) << endl;
+
+    cout << "\n..........:: Average ::............." << endl;
+    cout << "\nAverage size of lists: " << getAverageLengthOfLists(array) << endl;
 
     return 0;
 }
