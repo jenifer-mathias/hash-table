@@ -20,7 +20,7 @@
 
 Print da execução do exercício 3, imprimindo o número total de colisões após a inserção de todos os números na tabela.
 
-![image](https://github.com/jenifer-mathias/hash-table/blob/main/assets/hash-table-9.png)
+![image](https://github.com/jenifer-mathias/hash-table/blob/main/assets/hash-table-exercise-3-total-collisions.png)
 
 Print da execução do exercício 4, imprimindo a média dos comprimentos das listas.
 
