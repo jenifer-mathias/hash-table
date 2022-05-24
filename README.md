@@ -18,15 +18,15 @@
 
 ![image](https://github.com/jenifer-mathias/hash-table/blob/main/assets/hash-table.png)
 
-Print da execução do exercício 3, imprimindo o número total de colisões após a inserção de todos os números na tabela.
+## Print da execução do exercício 3, imprimindo o número total de colisões após a inserção de todos os números na tabela.
 
 ![image](https://github.com/jenifer-mathias/hash-table/blob/main/assets/hash-table-exercise-3-total-collisions.png)
 
-Print da execução do exercício 4, imprimindo a média dos comprimentos das listas.
+## Print da execução do exercício 4, imprimindo a média dos comprimentos das listas.
 
 ![image](https://github.com/jenifer-mathias/hash-table/blob/main/assets/hash-table-exercise4-average-length-of-lists.png)
 
-Prints das execuções do exercício 5, imprimindo o número total de colisões após a inserção de todos os números na tabela em diferentes tamanhos sendo elas 9, 11, 16 e 21.
+## Prints das execuções do exercício 5, imprimindo o número total de colisões após a inserção de todos os números na tabela em diferentes tamanhos sendo elas 9, 11, 16 e 21.
 
 ![image](https://github.com/jenifer-mathias/hash-table/blob/main/assets/hash-table-exercise5-size-9.png)
 
