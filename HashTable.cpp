@@ -80,17 +80,20 @@ public:
             cout << endl;
         }
     }
+
+    float getAverageLengthOfLists() {
+        float soma;
+        int count;
+        count = 0;
+
+        for (int i = 0; i < total_elements; i++) {
+            count = count + 1;
+            soma = soma + table[i].size();
+        }
+        return soma / count;
+    }
+
 };
-
-float getAverageLengthOfLists(int array[]) {
-    float sum;
-    int count = 0;
-
-    for (int i = 1; i < sizeof array / sizeof array[0]; i++)
-        count = count + 1;
-    sum = sum + sizeof array / sizeof array[0];
-    return sum / count;
-}
 
 int main() {
     /** Create a hash table with x indices: */
@@ -114,7 +117,7 @@ int main() {
     cout << "\nTotal collisions: " << hashTable.collisionCount << endl;
 
     cout << "\n..........:: Average ::............." << endl;
-    cout << "\nAverage size of lists: " << getAverageLengthOfLists(array) << endl;
+    cout << "\nAverage size of lists: " << hashTable.getAverageLengthOfLists() << endl;
 
     return 0;
 }
